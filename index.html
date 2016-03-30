@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Event Guest Attendance Recorder</title>
+		<meta charset="utf-8" lang="en-gb"/>
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"/>
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection"/>
+		<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	</head>
+	<body class="grey darken-3 white-text">
+		<div class="container">
+			<div class="col s12">
+				<h1 class="center-align">Welcome to the Guest Attendance Recorder for this Event!</h1>
+				<br/>
+				<div class="center-align"><a href="#signform" class="blue accent-1 waves-effect waves-light btn-large modal-trigger"><i class="material-icons right">mode_edit</i>sign me in!</a></div>
+			</div>
+		</div>
+		<div id="signform" class="modal modal-fixed-footer black-text">
+			<div class="modal-content">
+			  <h4>Event Guest Attendance Form</h4>
+			  <br/>
+			  <form>
+			  <div class="input-field">
+				  <i class="material-icons prefix">account_circle</i>
+				  <input id="guest_name" type="text" class="validate">
+				  <label for="guest_name">Name of Guest</label>
+			  </div>
+			  <br/>
+			  <div class="input-field">
+				  <i class="material-icons prefix">perm_device_information</i>
+				  <input id="guest_contact" type="text" class="validate">
+				  <label for="guest_contact">Guest Contact Number</label>
+			  </div>
+			  <br/>
+			  <div class="input-field">
+				  <i class="material-icons prefix">language</i>
+				  <input id="guest_organisation" type="text" class="validate">
+				  <label for="guest_organisation">Organisation of Guest</label>
+			  </div>
+			  <br/>
+			  <div class="input-field">
+				  <i class="material-icons prefix">comment</i>
+				  <input id="comments_from_guest" type="text" class="validate">
+				  <label for="comments_from_guest">Comments? Suggestions?</label>
+			  </div>
+			  </form>
+			</div>
+			<div class="modal-footer">
+			  <a id="signme" class="modal-action modal-close waves-effect waves-green btn-flat ">Sign!</a>
+			  <a class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+			</div>
+	    </div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/modal.js"></script>
+		<script type="text/javascript" src="js/formsubmitter.js"></script>
+	</body>
+</html>
